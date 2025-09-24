@@ -36,9 +36,3 @@ jobs:
       - name: Run tests
         run: make test
 
-      - name: Upload coverage reports
-        if: success()
-        uses: actions/upload-artifact@v3
-        with:
-          name: coverage-report
-          path: build/coverage/
